@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.header {
+    background: #ffffff;
+    padding: 24px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+}
+
+.header p {
+    margin: 0;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 24px;
+}
+
+.task-form-section,
+.tasks-section {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.task-form-section h2,
+.tasks-section h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 18px;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.error {
+    color: #c62828;
+    min-height: 18px;
+    margin: 4px 0;
+}
+
+.task-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #fafafa;
+}
+
+.task-card h3 {
+    margin-top: 0;
+}
+
+.task-card p {
+    margin: 7px 0;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.delete-button {
+    background: #eee;
+}
+
+.edit-button {
+    background: #eee;
+}
+
+.fixed-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 96%;
+        margin: 15px auto;
+    }
+
+    .task-form-section,
+    .tasks-section {
+        padding: 16px;
+    }
+
+    .header {
+        padding: 18px;
+    }
+}
