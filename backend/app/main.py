@@ -383,10 +383,13 @@ def insertion_sort(records, key):
 
     return records
 
-
 def linear_search(records, target_value, key):
+    target = target_value.strip().lower()
+
     for record in records:
-        if key(record) == target_value:
+        value = key(record)
+
+        if value and value.strip().lower() == target:
             return record
 
     return None
