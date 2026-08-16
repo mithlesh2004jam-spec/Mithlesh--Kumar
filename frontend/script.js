@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://taskflow-api-k8yv.onrender.com";
 
 const taskForm = document.getElementById("taskForm");
 const taskList = document.getElementById("taskList");
